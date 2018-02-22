@@ -1,8 +1,8 @@
 # docker build -t rlliang/php70 .
 
-# docker run -d -e "NGINX_GENERATE_DEFAULT_VHOST=false" --dns=202.106.0.20 --add-host dataexgp.wfuzz.com:192.168.10.152 --add-host gp.wfuzz.com:192.168.10.152 --add-host www.phpmyadmin.com:192.168.10.149 --add-host api.wfuzz.com:106.3.36.150 --privileged=true --read-only=false --ulimit nofile=102400:102400 -p 127.0.0.1:2253:22 -p 80:80 -p 443:443 -p 1080:1080 -p 8080:8080 -v /opt/docker/php70/logs:/var/log/nginx -v /opt/docker/php70/www:/www -v /opt/docker/php70/conf:/etc/nginx/ext.d -h php70 --name=php70 rlliang/php70
+# docker run -d -e "NGINX_GENERATE_DEFAULT_VHOST=false" --dns=202.192.0.20 --add-host dataexgp.wfuzz.com:192.168.10.152 --add-host gp.wfuzz.com:192.168.10.152 --add-host www.phpmyadmin.com:192.168.10.149 --add-host api.wfuzz.com:192.3.36.150 --privileged=true --read-only=false --ulimit nofile=102400:102400 -p 127.0.0.1:2253:22 -p 80:80 -p 443:443 -p 1080:1080 -p 8080:8080 -v /opt/docker/php70/logs:/var/log/nginx -v /opt/docker/php70/www:/www -v /opt/docker/php70/conf:/etc/nginx/ext.d -h php70 --name=php70 rlliang/php70
 
-# docker run -d -e "NGINX_GENERATE_DEFAULT_VHOST=false" --dns=202.106.0.20 --add-host dataexgp.wfuzz.com:192.168.10.152 --add-host gp.wfuzz.com:192.168.10.147 --add-host www.phpmyadmin.com:192.168.10.147 --add-host api.wfuzz.com:106.3.36.147 --privileged=true --read-only=false --ulimit nofile=102400:102400 -p 127.0.0.1:2253:22 -p 80:80 -p 443:443 -p 1080:1080 -p 8080:8080 -v /opt/docker/php70/logs:/var/log/nginx -v /opt/docker/php70/www:/www -v /opt/docker/php70/conf:/etc/nginx/ext.d -h php70 --name=php70 rlliang/php70
+# docker run -d -e "NGINX_GENERATE_DEFAULT_VHOST=false" --dns=202.192.0.20 --add-host dataexgp.wfuzz.com:192.168.10.152 --add-host gp.wfuzz.com:192.168.10.147 --add-host www.phpmyadmin.com:192.168.10.147 --add-host api.wfuzz.com:192.3.36.147 --privileged=true --read-only=false --ulimit nofile=102400:102400 -p 127.0.0.1:2253:22 -p 80:80 -p 443:443 -p 1080:1080 -p 8080:8080 -v /opt/docker/php70/logs:/var/log/nginx -v /opt/docker/php70/www:/www -v /opt/docker/php70/conf:/etc/nginx/ext.d -h php70 --name=php70 rlliang/php70
 
 
 FROM docker.io/centos:latest
