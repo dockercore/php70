@@ -2,7 +2,7 @@ version: '2'
 services:
     php70:
         build: .
-        image: rlliang/php70
+        image: zailing/php70
         container_name: php70
         hostname: php70
         privileged: true
@@ -33,11 +33,11 @@ services:
         dns: 202.106.0.20
         
         extra_hosts:
-            - "gp.37degree.com:192.168.10.152"
+            - "gp.wfuzz.com:192.168.10.152"
             - "www.phpmyadmin.com:192.168.10.149"
-            - "api.37degree.com:106.3.36.150"
+            - "api.wfuzz.com:192.168.1.2"
             
         
         
         
-            
+           
